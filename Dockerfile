@@ -14,4 +14,4 @@ RUN mkdir /app
 
 COPY --from=build /home/gradle/src/build/libs/*.jar /app/github-actions-example.jar
 
-ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "/app/github-actions-example.jar"]
+ENTRYPOINT ["java", "-jar", "/app/github-actions-example.jar"]
