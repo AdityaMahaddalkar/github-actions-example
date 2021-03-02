@@ -6,7 +6,7 @@ WORKDIR /home/gradle/src
 
 RUN gradle build --no-daemon
 
-FROM openjdk:15-jre-slim
+FROM openjdk:15-oracle
 
 EXPOSE 8080
 
